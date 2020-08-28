@@ -140,8 +140,7 @@ def parse_prefs(cfg, tag_cfg):
 		3: "_600.jpg",
 		4: "_max.jpg"}
 	if not dl_dir.strip():
-		dl_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
-				      "Qo-DL Reborn downloads")
+		dl_dir = ""
 	rt_opts['dir'] = dl_dir
 	rt_opts['qual'] = qual_dict[qual]
 	rt_opts['cov_size'] = cov_dict[cov_size]
